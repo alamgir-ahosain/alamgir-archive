@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>alamgir archive</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4d4.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- Docsify theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+
+    <!-- Sidebar Collapse Plugin (CSS for arrows) -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      window.$docsify = {
+        name: `
+          <div style="text-align:center; margin-bottom:10px; font-size:14px;">
+            <a href="https://github.com/alamgir-ahosain" target="_blank" style="margin-right:8px; color:black;">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alamgir-ahosain/" target="_blank" style="color:#0077B5;">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+         alamgir archive
+        `,
+        loadSidebar: true,
+        subMaxLevel: 2,
+        sidebarDisplayLevel: 0, // collapse all folders by default
+      };
+
+      //  Custom plugin for dynamic tab title
+      window.$docsify.plugins = [].concat(
+        window.$docsify.plugins || [],
+        function (hook, vm) {
+          hook.doneEach(function () {
+            const active = document.querySelector(".sidebar-nav li.active a");
+            if (active) {
+              document.title = active.innerText + " - ALAMGIR ARCHIVE";
+            } else {
+              document.title = "ARCHIVE";
+            }
+          });
+        }
+      );
+    </script>
+
+    <!-- Docsify core -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+    <!-- Sidebar Collapse Plugin -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+    <!-- Docsify Pagination Plugin -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+    <!-- Pagination Container -->
+    <div
+      id="pagination"
+      style="
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        z-index: 1000;
+      "
+    >
+      <!-- Previous button will be injected on the left -->
+      <div id="prev-button"></div>
+      <!-- Next button will be injected on the right -->
+      <div id="next-button"></div>
+    </div>
+
+    <script>
+      // Initialize Docsify Pagination
+      window.$docsify.plugins = [].concat(
+        window.$docsify.plugins || [],
+        function (hook, vm) {
+          hook.afterEach(function (html, next) {
+            // Let the pagination plugin handle this automatically
+            next(html);
+          });
+        }
+      );
+
+      // custom styling for buttons
+      const style = `
+        <style>
+          #pagination a {
+            text-decoration: none;
+            background: #f0f0f0;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 16px;
+          }
+          #pagination a:hover {
+            background: #e0e0e0;
+          }
+        </style>
+      `;
+      document.head.insertAdjacentHTML("beforeend", style);
+    </script>
+  </body>
+</html>
