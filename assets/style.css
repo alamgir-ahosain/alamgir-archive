@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+a {
+  color: #007acc;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  z-index: 1000;
+}
+.toc-toggle {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  z-index: 1000;
+}
