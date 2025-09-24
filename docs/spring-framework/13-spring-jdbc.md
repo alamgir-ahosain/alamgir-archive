@@ -22,6 +22,7 @@
 - Exception Handling Problem (multiple try-catch-finally block).
 - Code duplication.
 - Database login is a time consuming task.
+
 <h1 id="sp">2. Spring JDBC</h1>
 
 - Provides a JDBC abstraction layer through the JdbcTemplate class.
@@ -39,7 +40,9 @@
     - `url` = ? (jdbc:localhost:8080)
     - `username` = ?
     - `password` = ?
+
 <h3 id=""> 2. DriverManagerDataSource</h3>
+
 - Implementation of DataSource
 
 <h3 id="tem">3. JdbcTemplate</h3>
@@ -186,5 +189,7 @@ class Operation{
 [↑ Back to top](#top)<br><br>
    
 >**Github Code** : [Spring JDBC : spring ](https://github.com/alamgir-ahosain/Learn-Spring-Framework/tree/main/k_spring_jdbc)
+<br>
+
 >**Github Code** : [Spring JDBC : spring Boot ](https://github.com/alamgir-ahosain/Learn-Spring-Boot/tree/main/d-jdbc)
 
