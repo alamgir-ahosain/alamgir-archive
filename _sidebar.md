@@ -18,7 +18,16 @@
     - [Inject Primitive and String Type](docs/spring-framework/10-inject-primitive.md "Inject Primitive and String Type in Spring")
     - [Spring Bean Scopes](docs/spring-framework/11-bean-scope.md "Spring Bean Scopes")
     - [Spring Bean Life Cycle](docs/spring-framework/12-life-cycle-method.md)
+    - [Spring JDBC](docs/spring-framework/13-spring-jdbc.md "Spting JDBC Module")
 
 - Spring Boot
    - [Introduction](docs/spring-boot/1-introduction.md "Basic Topic") 
    - [Spring Boot Runner](docs/spring-boot/2-spring-runner.md)    
+  - Spring Boot Data JPA
+    - [Entity class and JPA Repository](docs/spring-boot/3-entity-jpa-repository.md)
+    - [CRUD workflow](docs/spring-boot/4-crud-workflow.md)
+    - [CRUD operation](docs/spring-boot/5-crud-operation.md)
+    - [DDL-Data Definition Language](docs/spring-boot/6-ddl.md)
+    - [Sorting and Pagination](docs/spring-boot/7-sorting-pagination.md)
+    - [Native SQL Query](docs/spring-boot/8.native-sql.md)
+    - [JPQL Query](docs/spring-boot/9-jpql.md)
