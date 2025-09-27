@@ -31,3 +31,4 @@
     - [3.5. Sorting and Pagination](docs/spring-boot/Data%20JPA/5-sorting-pagination.md)
     - [3.6. Native SQL Query](docs/spring-boot/Data%20JPA/6.native-sql.md)
     - [3.7. JPQL Query](docs/spring-boot/Data%20JPA/7-jpql.md)
+    - [3.8. Entity Relationship Mapping](docs/spring-boot/Data%20JPA/8-entity-mapping.md)
