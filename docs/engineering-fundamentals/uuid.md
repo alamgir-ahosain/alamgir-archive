@@ -40,7 +40,7 @@
 
   * Structure: `time_low`, `time_mid`, `time_high_and_version`, `clock_seq_and_version`, `node`
 * **v2:** POSIX UID replaces low_time; rarely used due to higher collision risk.
-* **v3 & v5:** Name-based using namespace + name; v3 uses MD5 hashing algorithm, v5 uses SHA1 hashing algorithm.
+* **v3 & v5:** Name-based using namespace + name; v3 uses `MD5 hashing` algorithm, v5 uses `SHA1 hashing` algorithm.
 * **v4:** Generated completly randomly and have no identifying information thus small chance of collision.
 * **v6:** Like v1, but timestamp bits reordered (most significant first).
 * **v7:** Time-based using Unix Epoch; node replaced with randomness for privacy.
@@ -59,17 +59,15 @@
 
   * **6 bits** are reserved for version + variant.
   * That leaves **122 random bits**.
-* So maximum unique random UUIDs =  $ 2\times 10^{22} $ ≈ $ \approx5.3 \times 10^{36} $.
+* So maximum unique random UUIDs = 2×10²² ≈ 5.3×10³⁶
+
 
 
 
 
 <h3 id="p">5. Probability of Collision Between Two UUIDs</h3>
-If we generate two UUIDs, the probability of them colliding is:
+If we generate two UUIDs, the probability of them colliding is: 1 / 2¹²² ≈ 1.88 × 10⁻³⁷
 
-\[
-\frac{1}{2^{122}} \approx 1.88 \times 10^{-37}
-\]
 
 which is extremly small and therefore can be regarded as practically impossible .
 
@@ -78,17 +76,12 @@ which is extremly small and therefore can be regarded as practically impossible 
 
  <h3 id="n">6. How many UUID needs to be generated to get a collision with a certain probability ?</h3>
 
-To calculate the number of UUIDs required for a collision with a given probability (p), **The Birthday Bound Formula** is used:
-\[
-n \approx \sqrt{2N \ln\left(\frac{1}{1-p}\right)}
-\]
+To calculate the number of UUIDs required for a collision with a given probability (p), <Br> 
+**The Birthday Bound Formula** is used: n = √(2·N·ln(1 / (1 - p))) <br>
+<br>
+<h4>For a 10% probability of collision:</h4>
+n = √(2 · 2¹²² · ln(1 / (1 - 0.1))) ≈ 1,058,482,487,574,424,704 × 10¹⁸ UUIDs
 
-For a 10% probability of collision:
- 
-\[
-n \approx \sqrt{2\cdot 2^{122}\cdot\ln\left(\frac{1}{1-0.1}\right)}
-\approx 1,058,482,487,574,424,704\times10^{18}  UUIDs
-\]
 
 **Memory Requirements**
 Storing all generated UUIDs (128 bits = 16 bytes each):
@@ -98,14 +91,14 @@ Storing all generated UUIDs (128 bits = 16 bytes each):
 
 **Time to Generate**
 At a rate of 1,000,000 UUIDs per second:
-- Seconds required: $ \approx 1.058 \times 10^{12} $
+- Seconds required: ≈ 1.058 × 10¹²
 - Years required: 33,564.26 years
 
 
 <h4>Key Points </h4>
 
 * Collisions are theoretically possible.
-* A **10% chance** requires generating about ($ 1.06 \times 10^{18} $) UUIDs, needing **~17 million TB** of storage and **33,564 years** at **1M UUIDs/sec**.
+* A **10% chance** requires generating about (1.06 × 10¹⁸) UUIDs, needing **~17 million TB** of storage and **33,564 years** at **1M UUIDs/sec**.
 * so Collisions are practically impossible for real systems.
 
 
