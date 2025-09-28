@@ -4,6 +4,7 @@
     - [3. maven and gradle](docs/engineering-fundamentals/maven-vs-gradle.md)
     - [4. Microservie Architecture](docs/engineering-fundamentals/microservice-architecture.md)
     - [5. Monolithic Architecture](docs/engineering-fundamentals/monolithic-architecture.md)
+    - [6. UUID - Universally Unique Identifier](docs/engineering-fundamentals/uuid.md)
 
 - spring Frameworks
     - [1. Introduction](docs/spring-framework/1-spring-intro.md)
@@ -31,3 +32,4 @@
     - [3.5. Sorting and Pagination](docs/spring-boot/Data%20JPA/5-sorting-pagination.md)
     - [3.6. Native SQL Query](docs/spring-boot/Data%20JPA/6.native-sql.md)
     - [3.7. JPQL Query](docs/spring-boot/Data%20JPA/7-jpql.md)
+    - [3.8. Entity Relationship Mapping](docs/spring-boot/Data%20JPA/8-entity-mapping.md)
