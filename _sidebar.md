@@ -4,6 +4,7 @@
     - [3. maven and gradle](docs/engineering-fundamentals/maven-vs-gradle.md)
     - [4. Microservie Architecture](docs/engineering-fundamentals/microservice-architecture.md)
     - [5. Monolithic Architecture](docs/engineering-fundamentals/monolithic-architecture.md)
+    - [6. UUID - Universally Unique Identifier](docs/engineering-fundamentals/uuid.md)
 
 - spring Frameworks
     - [1. Introduction](docs/spring-framework/1-spring-intro.md)
