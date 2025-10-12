@@ -53,9 +53,4 @@
         - [4.16 HTTP Response Status Codes](docs/spring-boot/Web%20MVC/16-HTTP%20responce%20status%20code.md)
         - [4.17 HTTP Headers](docs/spring-boot/Web%20MVC/17-HTTP%20headers.md)
 
-
-        git config --global user.email "alamgir.ahosain@gmail.com"
-        git config --global user.name "alamgir-ahosain"
-   
-
   
