@@ -56,4 +56,5 @@
         - [4.19 Exception Handling in REST Services](docs/spring-boot/Web%20MVC/19-exception-handling.md)
    - [5. Spring Boot Actuator](docs/spring-boot/5-actuator.md)
    - [6. Config Files: .properties vs .yml, Application vs Bootstrap](docs/spring-boot/6-yaml-vs-properties.md)
+   - [7. Spring Boot Profiles ](docs/spring-boot/7-profiles.md)
   
