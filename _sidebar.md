@@ -54,5 +54,5 @@
         - [4.17 HTTP Headers](docs/spring-boot/Web%20MVC/17-HTTP%20headers.md)
         - [4.18 Consuming REST API](docs/spring-boot/Web%20MVC/18-consuming-rest-api)
         - [4.19 Exception Handling in REST Services](docs/spring-boot/Web%20MVC/19-exception-handling.md)
-
+   - [5. Spring Boot Actuator](docs/spring-boot/5-actuator.md)
   
