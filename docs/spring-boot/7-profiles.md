@@ -67,5 +67,3 @@ What Happend?
 - Bean `User` is created and available in the Spring context.
 - If active **profile ≠ "dev"** : Bean User is not created and Spring skips it.
 
-
-[↑ Back to top](#top) 

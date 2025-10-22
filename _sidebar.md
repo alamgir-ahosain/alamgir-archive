@@ -57,4 +57,8 @@
    - [5. Spring Boot Actuator](docs/spring-boot/5-actuator.md)
    - [6. Config Files: .properties vs .yml, Application vs Bootstrap](docs/spring-boot/6-yaml-vs-properties.md)
    - [7. Spring Boot Profiles ](docs/spring-boot/7-profiles.md)
+   - [8. Logging in Spring Boot ](docs/spring-boot/8-logging.md)
+
+
+   
   
