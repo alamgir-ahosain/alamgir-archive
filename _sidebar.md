@@ -52,5 +52,13 @@
         - [4.15 Path parameters and Query parameters](docs/spring-boot/Web%20MVC/15-Path%20vs%20Query%20Parameters.md)
         - [4.16 HTTP Response Status Codes](docs/spring-boot/Web%20MVC/16-HTTP%20responce%20status%20code.md)
         - [4.17 HTTP Headers](docs/spring-boot/Web%20MVC/17-HTTP%20headers.md)
+        - [4.18 Consuming REST API](docs/spring-boot/Web%20MVC/18-consuming-rest-api)
+        - [4.19 Exception Handling in REST Services](docs/spring-boot/Web%20MVC/19-exception-handling.md)
+   - [5. Spring Boot Actuator](docs/spring-boot/5-actuator.md)
+   - [6. Config Files: .properties vs .yml, Application vs Bootstrap](docs/spring-boot/6-yaml-vs-properties.md)
+   - [7. Spring Boot Profiles ](docs/spring-boot/7-profiles.md)
+   - [8. Logging in Spring Boot ](docs/spring-boot/8-logging.md)
 
+
+   
   
