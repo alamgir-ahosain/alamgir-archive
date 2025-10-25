@@ -58,6 +58,11 @@
    - [6. Config Files: .properties vs .yml, Application vs Bootstrap](docs/spring-boot/6-yaml-vs-properties.md)
    - [7. Spring Boot Profiles ](docs/spring-boot/7-profiles.md)
    - [8. Logging in Spring Boot ](docs/spring-boot/8-logging.md)
+  - 9.Spring Security
+    - [9.1 Generate JWT token](docs/spring-boot/spring%20security/1-JWT-token-generate%20copy.md)
+    - [9.2 Important Classes & Their Roles in JWT Authentication](docs/spring-boot/spring%20security/2-authentication-class.md)
+    - [9.3 Request  workflow](docs/spring-boot/spring%20security/3-request-workflow.md)
+
 
 
    
